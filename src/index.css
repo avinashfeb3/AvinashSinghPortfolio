@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common CSS */
+body{
+   background-color: #000;
+}
+:root{
+   --primary-color: #ff451b;
+}
+
+.primary-color{
+   @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 inline-block;
+}
+.bg-primary-color{
+   @apply bg-gradient-to-r from-orange-400 to-pink-600 inline-block;
+}
+::-webkit-scrollbar {
+   width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+   background: var(--bg-dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--primary-color);
+}
