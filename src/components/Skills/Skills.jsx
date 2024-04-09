@@ -2,28 +2,43 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Skills.scss";
+import HTML5 from '../../assets/images/skills/html5.png';
+import CSS3 from '../../assets/images/skills/css3.png';
+import JS from '../../assets/images/skills/js.png';
+import Sass from '../../assets/images/skills/sass.png';
+import BS from '../../assets/images/skills/bs.png';
+import Tailwind from '../../assets/images/skills/tailwind.png';
+import react from '../../assets/images/skills/react.png';
+import Figma from '../../assets/images/skills/figma.png';
+import PS from '../../assets/images/skills/ps.png';
+import AI from '../../assets/images/skills/ai.png';
+import Canva from '../../assets/images/skills/canva.png';
+import Git from '../../assets/images/skills/git.png';
+import GitHub from '../../assets/images/skills/github.png';
+import NodeJS from '../../assets/images/skills/nodejs.png';
+
+// Import other images as needed
+
 
 export const Skills = () => {
 
     // Skills Images
     const images = [
-        { src: 'src/assets/images/skills/html5.png', alt: 'HTML5'},
-        { src: 'src/assets/images/skills/css3.png', alt: 'CSS3' },
-        { src: 'src/assets/images/skills/js.png', alt: 'JS' },
-        { src: 'src/assets/images/skills/bs.png', alt: 'BS' },
-        { src: 'src/assets/images/skills/sass.png', alt: 'Sass' },
-        { src: 'src/assets/images/skills/react.png', alt: 'react' },
-        { src: 'src/assets/images/skills/figma.png', alt: 'figma' },
-        { src: 'src/assets/images/skills/ps.png', alt: 'ps' },
-        { src: 'src/assets/images/skills/ai.png', alt: 'ai' },
-        { src: 'src/assets/images/skills/git.png', alt: 'git' },
-        { src: 'src/assets/images/skills/github.png', alt: 'github' },
-        { src: 'src/assets/images/skills/canva.png', alt: 'canva' },
-        { src: 'src/assets/images/skills/tailwind.png', alt: 'tailwind' },
-        { src: 'src/assets/images/skills/nodejs.png', alt: 'nodejs' },
-        // Add more images as needed
-    ];
-      
+        { src: HTML5, alt: 'HTML5'},
+        { src: CSS3, alt: 'CSS3' },
+        { src: JS, alt: 'JS' },
+        { src: BS, alt: 'BS' },
+        { src: Sass,  alt: 'Sass' },
+        { src: react, alt: 'react' },
+        { src: Figma, alt: 'figma' },
+        { src: PS, alt: 'ps' },
+        { src: AI, alt: 'ai' },
+        { src: Git, alt: 'git' },
+        { src: GitHub, alt: 'github' },
+        { src: Canva, alt: 'canva' },
+        { src: Tailwind, alt: 'tailwind' },
+        { src: NodeJS, alt: 'nodejs' },
+    ];      
     // Carousel responsive configuration
     const responsive = {
         desktop: {
