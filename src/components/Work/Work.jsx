@@ -15,9 +15,9 @@ export const Work = () => {
         <p className="text-4xl mb-3 font-bold primary-color">Project Works</p>
         <p className="text-gray-400">Check out some of my recent work</p>
       </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
-          <img src={P1} alt="Project 1" />
+          <img src={P1} alt="Project 1"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Travel Agency
@@ -33,7 +33,7 @@ export const Work = () => {
           </div>
         </div>
         <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
-          <img src={P2} alt="Project 2" />
+          <img src={P2} alt="Project 2" className="h-[300px]"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Blood Bank Management System
@@ -49,7 +49,7 @@ export const Work = () => {
           </div>
         </div>
         <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
-          <img src={P3} alt="Project 3" />
+          <img src={P3} alt="Project 3" className="h-[300px]"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Appointment Management System
@@ -80,8 +80,8 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
-          <img src={P5} alt="Project 5" />
+        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative my-10 py-10">
+          <img src={P5} alt="Project 5" className="h-[300px]"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Login Form <br/>
@@ -96,7 +96,7 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
+        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative my-10 py-10">
           <img src={P6} alt="Project 6" />
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
@@ -113,7 +113,7 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
+        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative my-10 py-10">
           <img src={P7} alt="Project 7" />
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
@@ -130,7 +130,7 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
+        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative my-10 py-10">
           <img src={P8} alt="Project 8" />
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">

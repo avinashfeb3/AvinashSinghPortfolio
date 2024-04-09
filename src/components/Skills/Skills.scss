@@ -1,0 +1,5 @@
+/* Custom CSS to disable the arrows */
+.react-multiple-carousel__arrow {
+    display: none; /* Hide the arrow */
+    pointer-events: none; /* Disable pointer events */
+  }
