@@ -16,7 +16,7 @@ const Banner = () => {
             sequence={[
               "Web Designer",
               1000,
-              "FrontEnd Developer",
+              "Frontend Developer",
               1000,
               "React JS Developer",
               1000,
