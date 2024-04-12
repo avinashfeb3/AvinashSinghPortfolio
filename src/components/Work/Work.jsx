@@ -19,8 +19,10 @@ export const Work = () => {
         <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
           <img src={P1} alt="Project 1"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-            <span className="text-xl font-bold text-white tracking-wider text-center mx-auto mt-3">
+            <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Travel Agency
+            </span>
+            <span className="text-xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 (HTML5,CSS3,JavaScript & Bootstrap5)
             </span>
             <div className="pt-8 text-center">
@@ -35,8 +37,10 @@ export const Work = () => {
         <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
           <img src={P2} alt="Project 2" className="h-[300px]"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-            <span className="text-xl font-bold text-white tracking-wider text-center mx-auto mt-3">
+            <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Blood Bank Management System
+            </span>
+            <span className="text-xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 (HTML5,CSS3,JavaScript & Bootstrap3)
             </span>
             <div className="pt-8 text-center">
@@ -51,8 +55,10 @@ export const Work = () => {
         <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative">
           <img src={P3} alt="Project 3" className="h-[300px]"/>
           <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-            <span className="text-xxl font-bold text-white tracking-wider text-center mx-auto mt-3">
+            <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Appointment Management System
+            </span>
+            <span className="text-xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 (HTML5,CSS3,JavaScript & Bootstrap4)
             </span>
             <div className="pt-8 text-center">
