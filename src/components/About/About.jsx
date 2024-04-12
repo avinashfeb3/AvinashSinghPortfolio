@@ -3,7 +3,7 @@ import AboutImg from "../../assets/images/about-img.jpeg";
 
 export const About = () => {
   return (
-    <div className="text-white max-w-[1200px] mx-auto my-12" id="about">
+    <div className="text-white max-w-[1200px] mx-auto mt-10 pt-10" id="about">
       <div className="my-10 md:grid md:grid-cols-2 sm:py-16">
         {/* Image */}
         <img

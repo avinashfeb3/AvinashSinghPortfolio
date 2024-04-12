@@ -137,7 +137,7 @@ const ExperienceCard = () => {
 // Main component containing both education and experience cards
 const Resume = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 pt-24" id="resume">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-5 pt-24 pb-5" id="resume">
         <h2 className='text-4xl font-bold mb-5 pb-5 primary-color'>Resume</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="transition-transform transform-gpu hover:scale-105">
