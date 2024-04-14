@@ -7,6 +7,7 @@ import P5 from "../../assets/images/portfolio/P5.png";
 import P6 from "../../assets/images/portfolio/P6.png";
 import P7 from "../../assets/images/portfolio/P7.png";
 import P8 from "../../assets/images/portfolio/P8.png";
+import P9 from "../../assets/images/portfolio/P9.png";
 
 export const Work = () => {
   return (
@@ -146,6 +147,23 @@ export const Work = () => {
             </span>
             <div className="pt-8 text-center">
               <a href="https://borcellecatering.vercel.app/" target="_blank">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  Visit Site
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="transform tranisition-transform duration-300 hover:scale-105 overflow-hidden shaodw-lg shaodw-[#040c16] group container rounded-md flex justify-center items-center h-[300px] bg-cover relative my-10 py-10">
+          <img src={P9} alt="Project 9" />
+          <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
+            <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
+                Online Business
+              <br />
+              (React Js CSS)
+            </span>
+            <div className="pt-8 text-center">
+              <a href="https://onlinebusiness.vercel.app/" target="_blank">
                 <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                   Visit Site
                 </button>
