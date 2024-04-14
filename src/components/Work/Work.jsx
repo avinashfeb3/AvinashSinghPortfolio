@@ -160,7 +160,7 @@ export const Work = () => {
             <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 Online Business
               <br />
-              (React Js CSS)
+              (React Js, CSS)
             </span>
             <div className="pt-8 text-center">
               <a href="https://onlinebusiness.vercel.app/" target="_blank">
