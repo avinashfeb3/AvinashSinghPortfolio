@@ -88,7 +88,7 @@ const ExperienceCard = () => {
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-          Here I have worked for 6 months as a Software Programmer Intern. Basically, this is a Ed-Tech, here my job is to enhance the look, functionality of a website. Maintaining and fixing problems of the existing website.
+              Currently I am working as UI/UX Designer for Ministry of Electronics & Information Technology. To design the website wireframes for the old and the new websites. Also design the social media poster.
               </p>
           </div>
         </li>
