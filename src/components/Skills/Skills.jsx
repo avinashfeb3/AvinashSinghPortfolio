@@ -16,6 +16,9 @@ import Canva from '../../assets/images/skills/canva.png';
 import Git from '../../assets/images/skills/git.png';
 import GitHub from '../../assets/images/skills/github.png';
 import NodeJS from '../../assets/images/skills/nodejs.png';
+import PHP from '../../assets/images/skills/php.png';
+import CodeIgniter from '../../assets/images/skills/codeigniter.png';
+import Laravel from '../../assets/images/skills/laravel.png';
 // Import other images as needed
 
 
@@ -37,6 +40,9 @@ export const Skills = () => {
         { src: Canva, alt: 'canva' },
         { src: Tailwind, alt: 'tailwind' },
         { src: NodeJS, alt: 'nodejs' },
+        { src: PHP, alt: 'php' },
+        { src: CodeIgniter, alt: 'CodeIgniter' },
+        { src: Laravel, alt: 'Laravel' },
     ];      
     // Carousel responsive configuration
     const responsive = {
