@@ -20,8 +20,6 @@ const Banner = () => {
               1000,
               "React JS Developer",
               1000,
-              "Full Stack Developer",
-              1000,
             ]}
             wrapper="span"
             speed={50}
