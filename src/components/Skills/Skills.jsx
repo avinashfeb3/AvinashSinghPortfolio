@@ -16,9 +16,7 @@ import Canva from '../../assets/images/skills/canva.png';
 import Git from '../../assets/images/skills/git.png';
 import GitHub from '../../assets/images/skills/github.png';
 import NodeJS from '../../assets/images/skills/nodejs.png';
-// import PHP from '../../assets/images/skills/php.png';
-// import CodeIgniter from '../../assets/images/skills/codeigniter.png';
-// import Laravel from '../../assets/images/skills/laravel.png';
+import MongoDB from '../../assets/images/skills/mongodb.png';
 // Import other images as needed
 
 
