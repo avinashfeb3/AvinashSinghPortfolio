@@ -16,7 +16,7 @@ import Canva from '../../assets/images/skills/canva.png';
 import Git from '../../assets/images/skills/git.png';
 import GitHub from '../../assets/images/skills/github.png';
 import NodeJS from '../../assets/images/skills/nodejs.png';
-// import MongoDB from '../../assets/images/skills/mongodb.png';
+import MongoDB from '../../assets/images/skills/mongo.png';
 // Import other images as needed
 
 
@@ -38,7 +38,7 @@ export const Skills = () => {
         { src: Canva, alt: 'canva' },
         { src: Tailwind, alt: 'tailwind' },
         { src: NodeJS, alt: 'nodejs' },
-        // { src: MongoDB, alt: 'mongo' },
+        { src: MongoDB, alt: 'mongo' },
     ];      
     // Carousel responsive configuration
     const responsive = {
