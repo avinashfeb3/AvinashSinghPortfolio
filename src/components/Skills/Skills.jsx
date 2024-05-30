@@ -38,7 +38,7 @@ export const Skills = () => {
         { src: Canva, alt: 'canva' },
         { src: Tailwind, alt: 'tailwind' },
         { src: NodeJS, alt: 'nodejs' },
-        { src: MongoDB, alt: 'mongo' },
+        // { src: MongoDB, alt: 'mongo' },
     ];      
     // Carousel responsive configuration
     const responsive = {
