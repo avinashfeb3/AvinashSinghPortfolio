@@ -84,11 +84,11 @@ const ExperienceCard = () => {
                 <h5 className="text-gray-400 font-semibold">Velocis System Pvt. Ltd.</h5>
               </div>
               <div className="year mt-4 sm:mt-0 sm:ml-auto rounded-full border-2 border-pink-600">
-                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">May-2024 to Till-Present</span>
+                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">May-2024 to Jun-2024</span>
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-              Currently I am working as UI/UX Designer for Ministry of Electronics & Information Technology. To design the website wireframes for the old and the new websites. Also design the social media poster.
+             I worked as UI/UX Designer for Ministry of Electronics & Information Technology. To design the website wireframes for the old and the new websites.
               </p>
           </div>
         </li>
