@@ -51,12 +51,12 @@ export const Work = () => {
       </div>
       
       {/* Navigation Tabs */}
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="flex justify-center space-x-2 sm:space-x-4 mb-8 flex-wrap">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-4 py-2 rounded-md ${
+            className={`px-3 py-2 sm:px-4 sm:py-2 rounded-md text-sm sm:text-base ${
               activeTab === tab
                 ? "text-white transition duration-300 transform hover:scale-105 bg-pink-600"
                 : "text-white transition duration-300 transform hover:scale-105 hover:bg-pink-600"
@@ -68,20 +68,20 @@ export const Work = () => {
       </div>
 
       {/* Project Grid */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg group container rounded-md flex justify-center items-center h-[300px] bg-cover relative"
+            className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg group container rounded-md flex justify-center items-center h-[200px] sm:h-[300px] bg-cover relative"
           >
-            <img src={project.image} alt={project.title} />
+            <img src={project.image} alt={project.title} className="object-cover w-full h-full" />
             <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
-              <span className="text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
+              <span className="text-sm sm:text-2xl font-bold text-white tracking-wider text-center mx-auto mt-3">
                 {project.title}
               </span>
-              <div className="pt-8 text-center h-[400px]">
+              <div className="pt-8 text-center">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-lg px-4 py-2 sm:px-4 sm:py-3 m-2 bg-white text-gray-700 font-bold text-xs sm:text-lg">
                     Visit Site
                   </button>
                 </a>
