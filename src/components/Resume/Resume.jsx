@@ -88,7 +88,7 @@ const ExperienceCard = () => {
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-               Currently I am working as a React JS Developer. My job is to develop the website from scratch. I have to design the website wireframes, develop the website and deploy the website.
+               Currently I am working as a React JS Developer. My job is to develop the website from scratch. I have to design the website wireframes, develop the website and deploy the websites.
               </p>
           </div>
         </li>
