@@ -9,7 +9,7 @@ import Sass from '../../assets/images/skills/sass.png';
 import BS from '../../assets/images/skills/bs.png';
 import Tailwind from '../../assets/images/skills/tailwind.png';
 import react from '../../assets/images/skills/react.png';
-// import next from '../../assets/images/skills/next.png';
+import next from "../../assets/images/skills/next.png";
 import Figma from '../../assets/images/skills/figma.png';
 import PS from '../../assets/images/skills/ps.png';
 import AI from '../../assets/images/skills/ai.png';
@@ -29,7 +29,7 @@ export const Skills = () => {
         { src: BS, alt: 'BS' },
         { src: Sass,  alt: 'Sass' },
         { src: react, alt: 'react' },
-        // { src: next, alt: 'next' },
+        { src: next, alt: 'next' },
         { src: Figma, alt: 'figma' },
         { src: PS, alt: 'ps' },
         { src: AI, alt: 'ai' },
