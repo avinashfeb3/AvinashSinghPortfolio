@@ -9,15 +9,13 @@ import Sass from '../../assets/images/skills/sass.png';
 import BS from '../../assets/images/skills/bs.png';
 import Tailwind from '../../assets/images/skills/tailwind.png';
 import react from '../../assets/images/skills/react.png';
+import next from '../../assets/images/skills/next.png';
 import Figma from '../../assets/images/skills/figma.png';
 import PS from '../../assets/images/skills/ps.png';
 import AI from '../../assets/images/skills/ai.png';
 import Canva from '../../assets/images/skills/canva.png';
 import Git from '../../assets/images/skills/git.png';
 import GitHub from '../../assets/images/skills/github.png';
-import PHP from '../../assets/images/skills/php.png';
-import Laravel from '../../assets/images/skills/laravel.png';
-import MYSQL from '../../assets/images/skills/Mysql.png';
 // Import other images as needed
 
 
@@ -31,6 +29,7 @@ export const Skills = () => {
         { src: BS, alt: 'BS' },
         { src: Sass,  alt: 'Sass' },
         { src: react, alt: 'react' },
+        { src: next, alt: 'next' },
         { src: Figma, alt: 'figma' },
         { src: PS, alt: 'ps' },
         { src: AI, alt: 'ai' },
@@ -38,9 +37,6 @@ export const Skills = () => {
         { src: GitHub, alt: 'github' },
         { src: Canva, alt: 'canva' },
         { src: Tailwind, alt: 'tailwind' },
-        { src: PHP, alt: 'PHP' },
-        { src: Laravel, alt: 'Laravel' },
-        { src: MYSQL, alt: 'MYSQL' },
     ];      
     // Carousel responsive configuration
     const responsive = {

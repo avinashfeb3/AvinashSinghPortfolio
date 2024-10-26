@@ -14,15 +14,12 @@ const Banner = () => {
           <span className="primary-color">I'm a</span> <br />
           <TypeAnimation
             sequence={[
-              "Web Designer",
-              1000,
-              "UI/UX Designer",
-              1000,
               "Frontend Developer",
               1000,
               "React JS Developer",
               1000,
-              "FullStack Developer",
+              "Next JS Developer",
+              "UI/UX Designer",
               1000,
             ]}
             wrapper="span"
