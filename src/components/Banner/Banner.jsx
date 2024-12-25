@@ -2,6 +2,7 @@ import React from "react";
 import HeroImage from "../../assets/images/profilepic.png";
 import { TypeAnimation } from "react-type-animation";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaBehance, FaDribbble } from "react-icons/fa";
 
 const Banner = () => {
   return (
@@ -37,8 +38,7 @@ const Banner = () => {
 
         {/* Social Media Section Start */}
         <div className="my-8 flex items-center">
-          <a
-            href="https://github.com/avinashfeb3"
+          <a href="https://github.com/avinashfeb3"
             target="_blank"
             className="text-white mr-4 hover:text-orange-600 transition-colors duration-300"
           >
@@ -51,10 +51,16 @@ const Banner = () => {
           >
             <AiFillLinkedin size={40} />
           </a>
+          <a href="https://dribbble.com/avinashsinghdes" target="_blank" className="text-white hover:text-orange-400 transition-colors duration-300 mx-1 px-1">
+          <FaDribbble  size={40} />
+          </a>
+          <a href="https://www.behance.net/avinashsingh176" target="_blank" className="text-white hover:text-orange-400 transition-colors duration-300 mx-1 px-1">
+          <FaBehance size={40}/>
+          </a>
         </div>
         {/* Scoial Media Section End */}
 
-        <div className="my-8">
+        <div className="my-8 py-4">
           <a
             href="/src/assets/images/Resume/Resume.docx"
             className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white"
