@@ -3,3 +3,28 @@
     display: none; /* Hide the arrow */
     pointer-events: none; /* Disable pointer events */
   }
+
+  .skill-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .skill-item:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 35px;
+    color: #fff;
+  }

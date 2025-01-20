@@ -18,7 +18,6 @@ import Git from '../../assets/images/skills/git.png';
 import GitHub from '../../assets/images/skills/github.png';
 // Import other images as needed
 
-
 export const Skills = () => {
 
     // Skills Images
@@ -28,15 +27,15 @@ export const Skills = () => {
         { src: JS, alt: 'JS' },
         { src: BS, alt: 'BS' },
         { src: Sass,  alt: 'Sass' },
-        { src: react, alt: 'react' },
-        { src: next, alt: 'next' },
-        { src: Figma, alt: 'figma' },
-        { src: PS, alt: 'ps' },
-        { src: AI, alt: 'ai' },
-        { src: Git, alt: 'git' },
-        { src: GitHub, alt: 'github' },
-        { src: Canva, alt: 'canva' },
-        { src: Tailwind, alt: 'tailwind' },
+        { src: react, alt: 'React Js' },
+        { src: next, alt: 'Next Js' },
+        { src: Figma, alt: 'Figma' },
+        { src: PS, alt: 'PS' },
+        { src: AI, alt: 'AI' },
+        { src: Git, alt: 'Git' },
+        { src: GitHub, alt: 'Github' },
+        { src: Canva, alt: 'Canva' },
+        { src: Tailwind, alt: 'Tailwind CSS' },
     ];      
     // Carousel responsive configuration
     const responsive = {
@@ -86,7 +85,10 @@ export const Skills = () => {
           }
       >
         {images.map((image, index) => (
-          <img key={index} src={image.src} alt={image.alt}  className="w-[100px] h-[100px] mb-4 p-2"/>
+          <div key={index} className="skill-item relative group">
+            <img src={image.src} alt={image.alt} className="w-[100px] h-[100px] mb-4 p-2"/>
+            <span className="skill-name absolute bottom-0 left-0 w-full text-center text-white bg-orange bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{image.alt}</span>
+          </div>
         ))}
       </Carousel>
       {/* Skills Image Section End */}
