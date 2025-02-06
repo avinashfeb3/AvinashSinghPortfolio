@@ -79,24 +79,6 @@ const ExperienceCard = () => {
             <div className="mt-4 flex flex-col sm:flex-row">
               <div className="sm:mr-4">
                 <h4 className="text-white font-bold">
-                  React JS Developer
-                </h4>
-                <h5 className="text-gray-400 font-semibold">Asian Contec Ltd (Stanlay)</h5>
-              </div>
-              <div className="year mt-4 sm:mt-0 sm:ml-auto rounded-full border-2 border-pink-600">
-                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color"> October-2024 to Till-Present</span>
-              </div>
-            </div>
-            <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-               Currently I am working as a React JS Developer. My job is to develop the website from scratch. I have to design the website wireframes, develop the website and deploy the websites.
-              </p>
-          </div>
-        </li>
-        <li>
-          <div className="d-sm-flex align-items-center justify-content-between">
-            <div className="mt-4 flex flex-col sm:flex-row">
-              <div className="sm:mr-4">
-                <h4 className="text-white font-bold">
                 UI/UX Designer
                 </h4>
                 <h5 className="text-gray-400 font-semibold">Velocis System Pvt. Ltd.</h5>
