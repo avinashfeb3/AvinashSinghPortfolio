@@ -51,9 +51,6 @@ const Banner = () => {
           >
             <AiFillLinkedin size={40} />
           </a>
-          <a href="https://dribbble.com/avinashsinghdes" target="_blank" className="text-white hover:text-orange-400 transition-colors duration-300 mx-1 px-1">
-          <FaDribbble  size={40} />
-          </a>
           <a href="https://www.behance.net/avinashsingh176" target="_blank" className="text-white hover:text-orange-400 transition-colors duration-300 mx-1 px-1">
           <FaBehance size={40}/>
           </a>
