@@ -58,13 +58,13 @@ const Banner = () => {
         {/* Scoial Media Section End */}
 
         <div className="my-8 py-4">
-          {/* <a
+          <a
             href="/src/assets/images/Resume/Resume.docx"
             className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white"
             download="Resume.docx"
           >
             Download CV
-          </a> */}
+          </a>
 
           <a
             href="#contact"

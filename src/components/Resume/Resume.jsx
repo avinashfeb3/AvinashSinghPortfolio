@@ -97,16 +97,16 @@ const ExperienceCard = () => {
             <div className="mt-4 flex flex-col sm:flex-row">
               <div className="sm:mr-4">
                 <h4 className="text-white font-bold">
-                Software Programmer
+                Software Programmer Intern
                 </h4>
                 <h5 className="text-gray-400 font-semibold">Samarth EGov</h5>
               </div>
               <div className="year mt-4 sm:mt-0 sm:ml-auto rounded-full border-2 border-pink-600">
-                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">Feb-2022 to Feb-2023</span>
+                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">Feb-2022 to Jul-2022</span>
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-          Here I have worked as a Software Programmer. Basically, this is a Ed-Tech, here my job is to enhance the look, functionality of a website. Maintaining and fixing problems of the existing website.
+          Here I have worked for 6 months as a Software Programmer Intern. Basically, this is a Ed-Tech, here my job is to enhance the look, functionality of a website. Maintaining and fixing problems of the existing website.
               </p>
           </div>
         </li>
