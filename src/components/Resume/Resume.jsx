@@ -97,12 +97,12 @@ const ExperienceCard = () => {
             <div className="mt-4 flex flex-col sm:flex-row">
               <div className="sm:mr-4">
                 <h4 className="text-white font-bold">
-                Software Programmer Intern
+                Software Programmer
                 </h4>
                 <h5 className="text-gray-400 font-semibold">Samarth EGov</h5>
               </div>
               <div className="year mt-4 sm:mt-0 sm:ml-auto rounded-full border-2 border-pink-600">
-                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">Feb-2022 to Jul-2022</span>
+                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">Feb-2022 to Feb-2023</span>
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
