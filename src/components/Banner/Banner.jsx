@@ -59,7 +59,7 @@ const Banner = () => {
 
         <div className="my-8 py-4">
           <a
-            href="/src/assets/images/Resume/Resume.docx"
+            href="/src/assets/images/Resume/Resume.pdf"
             className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white"
             download="Resume.pdf"
           >
