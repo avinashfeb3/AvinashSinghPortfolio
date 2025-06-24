@@ -98,6 +98,20 @@ export const Work = () => {
       image: U5,
       link: "https://www.behance.net/gallery/221026585/Internship-Portal-Login-Page-Form-Design",
     },
+    {
+      id: 16,
+      title: "College Website Banner",
+      category: ["UI/UX Design"],
+      image: U6,
+      link: "https://www.behance.net/gallery/228880923/College-Website-Banner",
+    },
+    {
+      id: 17,
+      title: "Beyond Marketing Webinar Banner",
+      category: ["UI/UX Design"],
+      image: U7,
+      link: "https://www.behance.net/gallery/228881959/Beyond-Marketing-Webinar-Banner?share=1",
+    },
   ];
 
   const filteredProjects =
