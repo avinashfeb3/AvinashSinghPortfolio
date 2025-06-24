@@ -14,6 +14,8 @@ import U2 from "../../assets/images/uiux/U2.png";
 import U3 from "../../assets/images/uiux/U3.png";
 import U4 from "../../assets/images/uiux/U4.png";
 import U5 from "../../assets/images/uiux/U5.png";
+import U6 from "../../assets/images/uiux/U6.png";
+import U7 from "../../assets/images/uiux/U7.png";
 import { FaArrowRight } from "react-icons/fa";
 
 export const Work = () => {
