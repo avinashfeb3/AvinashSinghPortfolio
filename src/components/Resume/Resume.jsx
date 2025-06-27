@@ -79,16 +79,16 @@ const ExperienceCard = () => {
             <div className="mt-4 flex flex-col sm:flex-row">
               <div className="sm:mr-4">
                 <h4 className="text-white font-bold">
-                UI/UX Designer
+                React JS Developer
                 </h4>
-                <h5 className="text-gray-400 font-semibold">Velocis System Pvt. Ltd.</h5>
+                <h5 className="text-gray-400 font-semibold">Asian Contec Ltd.</h5>
               </div>
               <div className="year mt-4 sm:mt-0 sm:ml-auto rounded-full border-2 border-pink-600">
-                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">May-2024 to Jun-2024</span>
+                <span className="text-gray-400 font-semibold mx-[20px] my-[10px] primary-color">Oct-2024 to Jan-2025</span>
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-             I worked as UI/UX Designer for Ministry of Electronics & Information Technology. To design the website wireframes for the old and the new websites.
+             I worked as React JS Developer in Asian Contec Ltd. Basically this is a construction company, here my job is to design and code the website and dashboard as per the wireframes.
               </p>
           </div>
         </li>
