@@ -115,7 +115,7 @@ const ExperienceCard = () => {
             <div className="mt-4 flex flex-col sm:flex-row">
               <div className="sm:mr-4">
                 <h4 className="  text-white font-bold text-base">
-                  Process Associate
+                  Frontend Developer
                 </h4>
                 <h5 className="text-gray-400 font-semibold">Sopra Steria</h5>
               </div>
@@ -124,7 +124,7 @@ const ExperienceCard = () => {
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-            Here I have worked for 2.4 Years as a Process Associate. Basically my worked is to provide the utility services to the client.
+            Here I have worked for 2.4 Years as a Frontend Developer.
               </p>
           </div>
         </li>
@@ -133,7 +133,7 @@ const ExperienceCard = () => {
             <div className="mt-4 flex flex-col sm:flex-row">
               <div className="sm:mr-4">
                 <h4 className="text-white h4 font-bold">
-                  Operation Representative
+                  Frontend Developer
                 </h4>
                 <h5 className="text-gray-400 font-semibold">Concentrix</h5>
               </div>
@@ -142,7 +142,7 @@ const ExperienceCard = () => {
               </div>
             </div>
             <p className=" text-gray-400 font-normal mt-2 pt-2 mb-2 pb-2">
-              Here I have worked for 11 months as a Operation Representative. Basically my worked is to provide the telecom related services to the customers.
+              Here I have worked for 1 year as a Frontend Developer.
               </p>
           </div>
         </li>
