@@ -1,69 +1,123 @@
-import Image from "next/image";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Services from "../components/Services";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Resume from "../components/Resume";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import ResumeModal from "../components/ResumeModal";
+import InteractiveTerminal from "../components/InteractiveTerminal";
+
+// Dynamically import browser-only canvas and cursor components to prevent SSR hydration mismatch
+const CustomCursor = dynamic(() => import("../components/CustomCursor"), {
+  ssr: false,
+});
+const ParticleBackground = dynamic(
+  () => import("../components/ParticleBackground"),
+  { ssr: false }
+);
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const toggleMute = () => {
+    setIsMuted((prev) => !prev);
+  };
+
+  // Keyboard shortcut listener: Ctrl+K or Cmd+K opens terminal
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setIsTerminalOpen((prev) => !prev);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="relative min-h-screen bg-[#090a0f] text-slate-100 selection:bg-cyan-500 selection:text-black overflow-x-hidden w-full">
+      {/* Browser-only interactive elements */}
+      {mounted && (
+        <>
+          <CustomCursor />
+          <ParticleBackground />
+        </>
+      )}
+
+      {/* Floating Glassmorphism Navbar */}
+      <Navbar
+        onOpenTerminal={() => setIsTerminalOpen(true)}
+        onOpenResume={() => setIsResumeModalOpen(true)}
+        isMuted={isMuted}
+        toggleMute={toggleMute}
+      />
+
+      {/* Main Content Sections */}
+      <main className="w-full flex flex-col">
+        {/* Hero Section */}
+        <Hero
+          onOpenResume={() => setIsResumeModalOpen(true)}
+          onOpenTerminal={() => setIsTerminalOpen(true)}
+          isMuted={isMuted}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        {/* About Section */}
+        <About isMuted={isMuted} />
+
+        {/* Services Section */}
+        <Services
+          onSelectService={(service) => setSelectedService(service)}
+          isMuted={isMuted}
+        />
+
+        {/* Skills & Arsenal Section */}
+        <Skills isMuted={isMuted} />
+
+        {/* Portfolio / Featured Projects Section */}
+        <Projects isMuted={isMuted} />
+
+        {/* Career Experience & Resume Section */}
+        <Resume
+          onOpenResumeModal={() => setIsResumeModalOpen(true)}
+          isMuted={isMuted}
+        />
+
+        {/* Contact Section ("Let's Start a Conversation") */}
+        <Contact initialService={selectedService} isMuted={isMuted} />
       </main>
+
+      {/* Footer */}
+      <Footer isMuted={isMuted} />
+
+      {/* Modals */}
+      <ResumeModal
+        isOpen={isResumeModalOpen}
+        onClose={() => setIsResumeModalOpen(false)}
+        isMuted={isMuted}
+      />
+
+      <InteractiveTerminal
+        isOpen={isTerminalOpen}
+        onClose={() => setIsTerminalOpen(false)}
+        isMuted={isMuted}
+      />
     </div>
   );
 }
