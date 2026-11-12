@@ -1,4 +1,4 @@
-# Avinash Singh — Senior Full-Stack & Creative Engineer Portfolio
+# Avinash Singh — Software Developer & Creative Engineer Portfolio
 
 A modern, high-performance portfolio website built with **Next.js (App Router)**, **Tailwind CSS**, and **GSAP (GreenSock)** animations.
 
