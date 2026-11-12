@@ -417,38 +417,6 @@ export const SKILLS: SkillItem[] = [
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
-    id: "indicorp",
-    role: "Software Developer",
-    company: "IndiCorp IT Solution Pvt. Ltd.",
-    location: "Noida, India",
-    period: "2026 — Present",
-    employmentType: "Full-Time",
-    isCurrent: true,
-    description:
-      "Working as a Software Developer at IndiCorp IT Solutions Pvt. Ltd., contributing to the development, enhancement, and maintenance of web-based applications.",
-    achievements: [
-      "Developing and maintaining responsive and user-friendly web applications.",
-      "Building frontend interfaces using HTML, CSS, JavaScript, and modern frameworks.",
-      "Developing backend functionality, database schemas, and business logic.",
-      "Creating, integrating, and testing RESTful APIs.",
-      "Managing databases and performing optimized CRUD operations.",
-      "Debugging application issues and improving overall performance.",
-      "Collaborating with cross-functional teams to deliver quality software solutions.",
-      "Using Git and GitHub for version control and collaborative code management.",
-    ],
-    skills: [
-      "Next.js",
-      "TypeScript",
-      "GSAP",
-      "Tailwind CSS",
-      "Node.js",
-      "MongoDB",
-      "PHP",
-      "Laravel",
-      "MYSQL",
-    ],
-  },
-  {
     id: "samarth-egov-intern",
     role: "Software Programmer Intern",
     company: "Samarth EGov",

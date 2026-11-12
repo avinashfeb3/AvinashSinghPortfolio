@@ -171,15 +171,15 @@ export default function Hero({
       {/* Decorative Grid Lines */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
 
-      <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center">
         {/* Availability Badge */}
         <div ref={badgeRef} className="mb-6">
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+          <div className="inline-flex max-w-full items-center gap-2.5 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.15)]">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
             </span>
-            <span className="text-xs font-medium text-emerald-300">
+            <span className="text-[11px] sm:text-xs font-medium text-emerald-300">
               Available for high-impact roles & projects
             </span>
           </div>
@@ -196,10 +196,10 @@ export default function Hero({
         </div>
 
         {/* Dynamic Changing Role */}
-        <div className="min-h-[3rem] mt-3 sm:mt-4 flex items-center justify-center px-2">
+        <div className="mt-3 sm:mt-4 min-h-[3.5rem] sm:min-h-[3rem] w-full max-w-full flex items-center justify-center overflow-hidden px-2">
           <div
             ref={roleRef}
-            className="text-lg sm:text-2xl md:text-3xl font-bold text-gradient-cyan tracking-tight font-sans text-center"
+            className="max-w-[calc(100vw-2rem)] break-words text-lg sm:text-2xl md:text-3xl font-bold text-gradient-cyan tracking-tight font-sans text-center"
           >
             {PERSONAL_INFO.roles[roleIndex]}
           </div>
@@ -208,7 +208,7 @@ export default function Hero({
         {/* Bio summary */}
         <p
           ref={descRef}
-          className="mt-6 max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed font-light"
+          className="mt-6 max-w-2xl px-2 text-base sm:text-lg text-slate-300 leading-relaxed font-light"
         >
           Specializing in{" "}
           <span className="text-white font-medium">React Js & Next JS</span>,{" "}
@@ -222,13 +222,13 @@ export default function Hero({
         {/* CTA Buttons */}
         <div
           ref={ctaRef}
-          className="mt-8 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4"
+          className="mt-8 w-full max-w-sm sm:max-w-none flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 px-2 sm:px-0"
         >
           {/* Explore Projects Button */}
           <button
             onClick={() => scrollToSection("projects")}
             onMouseEnter={() => playSound("hover", isMuted)}
-            className="group relative inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white font-semibold text-sm shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.55)] transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+            className="group relative inline-flex w-full sm:w-auto justify-center items-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white font-semibold text-sm shadow-[0_0_25px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.55)] transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
             <span>Explore Projects</span>
             <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -242,7 +242,7 @@ export default function Hero({
                 onOpenResume();
               }}
               onMouseEnter={() => playSound("hover", isMuted)}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white font-medium text-sm border border-white/[0.1] hover:border-cyan-500/40 backdrop-blur-md transition-all transform hover:-translate-y-0.5"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white font-medium text-sm border border-white/[0.1] hover:border-cyan-500/40 backdrop-blur-md transition-all transform hover:-translate-y-0.5"
             >
               <FileText className="w-4 h-4 text-cyan-400" />
               <span>Resume</span>
@@ -253,7 +253,7 @@ export default function Hero({
           <button
             onClick={() => scrollToSection("contact")}
             onMouseEnter={() => playSound("hover", isMuted)}
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 text-slate-300 hover:text-white font-medium text-sm border border-white/[0.08] backdrop-blur-md transition-all"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 text-slate-300 hover:text-white font-medium text-sm border border-white/[0.08] backdrop-blur-md transition-all"
           >
             <Mail className="w-4 h-4 text-slate-400" />
             <span>Contact Me</span>
@@ -268,7 +268,7 @@ export default function Hero({
               }}
               onMouseEnter={() => playSound("hover", isMuted)}
               title="Launch Interactive Terminal Playground"
-              className="inline-flex items-center gap-1.5 px-4 py-3 rounded-xl bg-slate-950/80 hover:bg-slate-900 text-cyan-400 font-mono text-xs border border-cyan-500/30 hover:border-cyan-400 transition-all shadow-[0_0_15px_rgba(6,182,212,0.15)]"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-1.5 px-4 py-3 rounded-xl bg-slate-950/80 hover:bg-slate-900 text-cyan-400 font-mono text-xs border border-cyan-500/30 hover:border-cyan-400 transition-all shadow-[0_0_15px_rgba(6,182,212,0.15)]"
             >
               <Terminal className="w-3.5 h-3.5" />
               <span>&gt; terminal</span>

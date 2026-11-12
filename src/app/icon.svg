@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Avinash Singh</title>
+  <rect width="64" height="64" rx="16" fill="#090a0f"/>
+  <path d="M6 48 16 16h7l10 32h-7l-2-7H15l-2 7H6Zm11-14h5l-2.5-9L17 34Z" fill="#38bdf8"/>
+  <path d="M54 22c-2-4-7-6-12-5-5 1-6 6-2 9l10 5c5 3 4 10 0 13-5 4-13 2-16-2" fill="none" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+</svg>

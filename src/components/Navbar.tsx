@@ -72,6 +72,18 @@ export default function Navbar({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!mobileMenuOpen) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   const handleNavClick = (href: string) => {
     playSound("click", isMuted);
     setMobileMenuOpen(false);
@@ -248,7 +260,7 @@ export default function Navbar({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 md:hidden bg-[#090a0f]/98 backdrop-blur-2xl flex flex-col pt-24 px-6 pb-8 border-b border-white/[0.08] overflow-y-auto">
+        <div className="fixed inset-0 z-40 md:hidden bg-[#090a0f]/98 backdrop-blur-2xl flex flex-col pt-24 px-4 sm:px-6 pb-8 border-b border-white/[0.08] overflow-y-auto">
           <div className="flex flex-col gap-2">
             {NAV_LINKS.map((link) => (
               <button
