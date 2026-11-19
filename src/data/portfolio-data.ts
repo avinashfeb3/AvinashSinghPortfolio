@@ -109,7 +109,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://online-travel-agency.netlify.app/",
     featured: true,
     accentColor: "#38bdf8",
-    architecture: ["PHP application structure", "MySQL data management", "Responsive frontend layout"],
+    architecture: [
+      "PHP application structure",
+      "MySQL data management",
+      "Responsive frontend layout",
+    ],
   },
   {
     id: "online-blood-bank-management-system",
@@ -132,7 +136,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://bloodsavershub.000webhostapp.com/",
     featured: true,
     accentColor: "#f43f5e",
-    architecture: ["PHP backend workflows", "MySQL database", "Role-based administration"],
+    architecture: [
+      "PHP backend workflows",
+      "MySQL database",
+      "Role-based administration",
+    ],
   },
   {
     id: "online-appointment-management-system",
@@ -155,7 +163,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://onlineappointmentmanag.000webhostapp.com/",
     featured: false,
     accentColor: "#a78bfa",
-    architecture: ["PHP server-side logic", "MySQL appointment records", "Responsive booking forms"],
+    architecture: [
+      "PHP server-side logic",
+      "MySQL appointment records",
+      "Responsive booking forms",
+    ],
   },
   {
     id: "online-beauty-spa",
@@ -178,7 +190,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://beauty-spa-women.netlify.app/",
     featured: true,
     accentColor: "#f9a8d4",
-    architecture: ["Responsive page structure", "Service-focused layout", "Mobile-friendly styling"],
+    architecture: [
+      "Responsive page structure",
+      "Service-focused layout",
+      "Mobile-friendly styling",
+    ],
   },
   {
     id: "lrs-services",
@@ -201,7 +217,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://www.lrsservices.in/",
     featured: true,
     accentColor: "#22d3ee",
-    architecture: ["Next.js page routing", "React component structure", "Responsive Tailwind styling"],
+    architecture: [
+      "Next.js page routing",
+      "React component structure",
+      "Responsive Tailwind styling",
+    ],
   },
   {
     id: "borcelle-catering",
@@ -224,7 +244,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://borcellecatering.vercel.app/",
     featured: false,
     accentColor: "#fb923c",
-    architecture: ["React component architecture", "Responsive content sections", "Modern catering brand layout"],
+    architecture: [
+      "React component architecture",
+      "Responsive content sections",
+      "Modern catering brand layout",
+    ],
   },
   {
     id: "online-business",
@@ -247,7 +271,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://onlinebusiness.vercel.app/",
     featured: false,
     accentColor: "#60a5fa",
-    architecture: ["React component structure", "Responsive layout system", "Conversion-focused page sections"],
+    architecture: [
+      "React component structure",
+      "Responsive layout system",
+      "Conversion-focused page sections",
+    ],
   },
   {
     id: "online-grocery-store",
@@ -270,7 +298,11 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://onlinegrocerystoreapp.vercel.app",
     featured: false,
     accentColor: "#4ade80",
-    architecture: ["React-based product interface", "Responsive shopping layout", "Structured product presentation"],
+    architecture: [
+      "React-based product interface",
+      "Responsive shopping layout",
+      "Structured product presentation",
+    ],
   },
 ];
 
@@ -433,13 +465,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Reduced portal response times to improve loading performance.",
       "Designed and developed new portals based on Central and State University requirements.",
     ],
-    skills: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Website Testing",
-      "Debugging",
-    ],
+    skills: ["HTML5", "CSS3", "JavaScript", "Website Testing", "Debugging"],
   },
   {
     id: "sopra-steria-process-associate",
@@ -459,11 +485,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Guided the team in resolving questions related to job packs and cases.",
       "Created street packs from client-provided easting and northing coordinates, uploaded them to tools such as Appcan and Box, and notified clients.",
     ],
-    skills: [
-      "Process Management",
-      "Quality Assurance",
-      "Team Collaboration",
-    ],
+    skills: ["Process Management", "Quality Assurance", "Team Collaboration"],
   },
   {
     id: "concentrix-operation-representative",
@@ -473,18 +495,15 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: "Feb 2017 — Feb 2018",
     employmentType: "Full-Time",
     isCurrent: false,
-    description: "Worked as an Operation Representative for one year at Concentrix.",
+    description:
+      "Worked as an Operation Representative for one year at Concentrix.",
     achievements: [
       "Handled Jio customer accounts related to data usage and the status of new Jio SIM cards.",
       "Provided resolutions for previous Service Requests (SR) within the required timelines.",
       "Provided information about new Jio plan offers.",
       "Resolved escalated calls and provided appropriate resolutions for Service Requests (SR) and First Time Resolution (FTR) cases.",
     ],
-    skills: [
-      "Operations",
-      "Customer Support",
-      "Process Coordination",
-    ],
+    skills: ["Operations", "Customer Support", "Process Coordination"],
   },
   {
     id: "education-mca",
@@ -496,7 +515,11 @@ export const EXPERIENCES: ExperienceItem[] = [
     isCurrent: false,
     description: "Master of Computer Applications from IGNOU.",
     achievements: ["Completed MCA in 2021."],
-    skills: ["Computer Applications", "Software Development", "Database Systems"],
+    skills: [
+      "Computer Applications",
+      "Software Development",
+      "Database Systems",
+    ],
   },
   {
     id: "education-bca",
@@ -693,9 +716,7 @@ export const RESUME_DATA = {
       location: "India",
       period: "2021",
       grade: "Master of Computer Applications",
-      highlights: [
-        "Completed Master of Computer Applications in 2021",
-      ],
+      highlights: ["Completed Master of Computer Applications in 2021"],
     },
     {
       degree: "BCA",
@@ -703,9 +724,7 @@ export const RESUME_DATA = {
       location: "India",
       period: "2016",
       grade: "Bachelor of Computer Applications",
-      highlights: [
-        "Completed Bachelor of Computer Applications in 2016",
-      ],
+      highlights: ["Completed Bachelor of Computer Applications in 2016"],
     },
     {
       degree: "Senior Secondary",
